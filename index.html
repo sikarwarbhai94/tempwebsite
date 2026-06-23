@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rustamji Institute of Technology | Hostel Management System</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#1E3A8A",
+                        "secondary": "#F59E0B",
+                        "surface-dim": "#d3daef",
+                        "outline-variant": "#c5c5d3",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#004a32",
+                        "on-tertiary-fixed-variant": "#005137",
+                        "tertiary-fixed-dim": "#68dba9",
+                        "on-secondary-container": "#684000",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f9ff",
+                        "secondary-container": "#F59E0B",
+                        "on-tertiary-container": "#4ac08f",
+                        "surface-bright": "#f9f9ff",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#edf0ff",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#90a8ff",
+                        "surface": "#ffffff",
+                        "outline": "#757682",
+                        "tertiary-fixed": "#85f8c4",
+                        "surface-container-high": "#e1e8fd",
+                        "secondary-fixed": "#ffddb8",
+                        "surface-tint": "#1E3A8A",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "tertiary": "#003120",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#00164e",
+                        "surface-variant": "#dce2f7",
+                        "inverse-primary": "#b6c4ff",
+                        "surface-container-highest": "#dce2f7",
+                        "on-surface": "#141b2b",
+                        "surface-container": "#e9edff",
+                        "secondary-fixed-dim": "#ffb95f",
+                        "primary-container": "#1E3A8A",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#2a1700",
+                        "on-secondary-fixed-variant": "#653e00",
+                        "on-tertiary-fixed": "#002114",
+                        "on-surface-variant": "#444651",
+                        "surface-container-low": "#f1f3ff",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#dce1ff",
+                        "on-background": "#141b2b",
+                        "inverse-surface": "#293040",
+                        "on-primary-fixed-variant": "#264191"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "lg": "48px",
+                        "margin-mobile": "16px",
+                        "md": "24px",
+                        "gutter": "24px",
+                        "xl": "80px",
+                        "margin-desktop": "40px",
+                        "base": "8px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "display": ["Hanken Grotesk"],
+                        "label-md": ["Work Sans"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-md": ["Work Sans"],
+                        "label-sm": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "headline-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .premium-shadow { box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04); }
+        .floating-shadow { box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08); }
+        .hero-blur { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-surface w-full top-0 sticky z-50 border-b border-outline-variant/30">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-md max-w-7xl mx-auto">
+<div class="font-display text-headline-md font-bold text-primary">RJIT HMS</div>
+<div class="hidden lg:flex items-center space-x-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Complaint Box</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Mess Food Menu</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Leave Application</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Room Allocation</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Attendance Tracking</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Fee Payment Portal</a>
+</div>
+<!-- Mobile Menu Placeholder -->
+<button class="lg:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[60vh] min-h-[450px] w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLs9RdnmAMSeM7QyMwbq8sPU3gYaEdzpXw_IU4xp3AMEGfleDJeD6Bv_kHQByjGvWXWmOHKGJsaH5iR03NbI7-MbWh6O2zECZJiKRDF5v9OEkNk6gLrbgI2AcBE8QW28kNTTSobHT3-OYILl-_gWvgYSPenRrNdCRWPCRVkE4WGscLm2hImDnUYGQSB1RBjuc1TefmdVUaE5gIQtye_GhNQN7IaLd-Q6zzjkql0Sc-QwTgtvt7gyS9ZkEt0');"></div>
+<div class="absolute inset-0 bg-white/80 hero-blur"></div>
+</div>
+<div class="relative z-10 max-w-4xl px-margin-desktop text-center">
+<h1 class="font-display text-display md:text-[56px] text-primary mb-sm leading-tight">
+                    Rustamji Institute of Technology
+                </h1>
+<p class="font-display text-headline-lg text-secondary uppercase tracking-[0.2em] mb-lg">
+                    Hostel Management System
+                </p>
+<div class="h-1 w-24 bg-secondary mx-auto rounded-full"></div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="relative -mt-20 z-20 px-margin-desktop max-w-4xl mx-auto">
+<div class="bg-white rounded-xl premium-shadow border border-outline-variant/30 p-lg flex justify-around items-center">
+<div class="flex flex-col items-center text-center px-lg">
+<div class="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary mb-sm">
+<span class="material-symbols-outlined">apartment</span>
+</div>
+<div class="font-display text-headline-lg text-primary">3</div>
+<div class="font-label-md text-on-surface-variant">Total Hostels</div>
+</div>
+<div class="w-px h-16 bg-outline-variant/30"></div>
+<div class="flex flex-col items-center text-center px-lg">
+<div class="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary mb-sm">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div class="font-display text-headline-lg text-primary">376</div>
+<div class="font-label-md text-on-surface-variant">Total Students</div>
+</div>
+</div>
+</section>
+<!-- Hostel Overview Section -->
+<section class="py-xl px-margin-desktop max-w-7xl mx-auto">
+<div class="mb-lg">
+<h2 class="font-display text-headline-lg text-primary mb-xs">Hostel Blocks</h2>
+<div class="h-1 w-12 bg-secondary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-white border border-outline-variant/30 rounded-xl p-lg premium-shadow hover:floating-shadow transition-all duration-300">
+<div class="w-12 h-12 bg-primary/5 text-primary rounded-lg flex items-center justify-center mb-md">
+<span class="material-symbols-outlined">home</span>
+</div>
+<h3 class="font-display text-headline-md text-primary mb-xs">APJ Abdul Kalam Hostel</h3>
+<p class="text-on-surface-variant font-label-md">Boys Hostel - Block A</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white border border-outline-variant/30 rounded-xl p-lg premium-shadow hover:floating-shadow transition-all duration-300">
+<div class="w-12 h-12 bg-primary/5 text-primary rounded-lg flex items-center justify-center mb-md">
+<span class="material-symbols-outlined">home</span>
+</div>
+<h3 class="font-display text-headline-md text-primary mb-xs">CV Raman Hostel</h3>
+<p class="text-on-surface-variant font-label-md">Boys Hostel - Block B</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white border border-outline-variant/30 rounded-xl p-lg premium-shadow hover:floating-shadow transition-all duration-300">
+<div class="w-12 h-12 bg-secondary/10 text-secondary rounded-lg flex items-center justify-center mb-md">
+<span class="material-symbols-outlined">home</span>
+</div>
+<h3 class="font-display text-headline-md text-primary mb-xs">Kalpana Chawla Hostel</h3>
+<p class="text-on-surface-variant font-label-md">Girls Hostel - Block C</p>
+</div>
+</div>
+</section>
+<!-- Administrative Portals -->
+<section class="py-xl bg-surface-container-low border-y border-outline-variant/20">
+<div class="px-margin-desktop max-w-7xl mx-auto">
+<div class="mb-xl text-center">
+<h2 class="font-display text-headline-lg text-primary mb-xs">Administrative Portals</h2>
+<p class="font-body-md text-on-surface-variant">Streamlined management tools for residents and staff.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Action 1 -->
+<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<span class="material-symbols-outlined">report_problem</span>
+</div>
+<div>
+<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Complaint Box</h4>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Register Issues</p>
+</div>
+</a>
+<!-- Action 2 -->
+<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<div>
+<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Mess Menu</h4>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Weekly Schedule</p>
+</div>
+</a>
+<!-- Action 3 -->
+<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div>
+<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Leave Application</h4>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Online Portal</p>
+</div>
+</a>
+<!-- Action 4 -->
+<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<span class="material-symbols-outlined">grid_view</span>
+</div>
+<div>
+<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Room Allocation</h4>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Manage Status</p>
+</div>
+</a>
+<!-- Action 5 -->
+<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<span class="material-symbols-outlined">fact_check</span>
+</div>
+<div>
+<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Attendance Tracking</h4>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Daily Records</p>
+</div>
+</a>
+<!-- Action 6 -->
+<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div>
+<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Fee Payment</h4>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Digital Transactions</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Application CTA (Simplified) -->
+<section class="py-xl bg-primary text-on-primary">
+<div class="px-margin-desktop max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-lg">
+<div class="text-center md:text-left">
+<h2 class="font-display text-headline-lg text-white mb-sm">Hostel Admission &amp; Queries</h2>
+<p class="font-body-md text-white/80">Contact the Registrar's office for admission processes and administrative support.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-md">
+<button class="bg-secondary text-white px-xl py-md rounded-lg font-label-md hover:bg-secondary/90 transition-colors shadow-lg">Contact Registrar</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white w-full border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-lg max-w-7xl mx-auto gap-md">
+<div class="flex flex-col items-center md:items-start gap-sm">
+<div class="font-display text-headline-md font-bold text-primary">RJIT HMS</div>
+<p class="font-body-md text-on-surface-variant max-w-xs text-center md:text-left">Unified Management Portal for Rustamji Institute of Technology Hostels.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="text-on-surface-variant hover:underline font-label-sm" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:underline font-label-sm" href="#">Student Handbook</a>
+<a class="text-on-surface-variant hover:underline font-label-sm" href="#">Contact Us</a>
+</div>
+<div class="font-label-sm text-on-surface-variant text-center md:text-right">
+                © 2024 Rustamji Institute of Technology. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
