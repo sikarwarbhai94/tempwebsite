@@ -105,97 +105,104 @@
 <style>
         .premium-shadow { box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04); }
         .floating-shadow { box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08); }
-        .hero-blur { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+        .hero-blur { backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
     </style>
 </head>
 <body class="bg-surface font-body-md text-on-surface">
 <!-- TopNavBar -->
 <header class="bg-surface w-full top-0 sticky z-50 border-b border-outline-variant/30">
-<nav class="flex justify-between items-center w-full px-margin-desktop py-md max-w-7xl mx-auto">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-base max-w-7xl mx-auto">
+<div class="flex items-center gap-sm shrink-0">
+<img alt="RJIT Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByKJAtyqSmNwYeSGFxUvT3kEOG7n3mEDQ7zJtY3tbM6Iq0nkV9iHmlWLXkFpEcSArM0MN2Jgjrs41yFVf7nxlPEEB2OrmejBjLbPKPUEmkmClJXEAO6FGF6WoyOVB-9Pty_pkk5qbu-NBeqoLfY77f-vednPuHJbaqP97VFCIOgcKGXtDKUJc1cKcBoYZmUrD8nbfs0a92HICAJeBGM-CdkNUHQn4upDEduo-gR6wBTo3Zc6ihaZZE18pNYB6-wqp42WZPivVqkx3t"/>
 <div class="font-display text-headline-md font-bold text-primary">RJIT HMS</div>
-<div class="hidden lg:flex items-center space-x-lg">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Complaint Box</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Mess Food Menu</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Leave Application</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Room Allocation</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Attendance Tracking</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Fee Payment Portal</a>
 </div>
-<!-- Mobile Menu Placeholder -->
-<button class="lg:hidden text-primary">
+<div class="hidden lg:flex flex-1 justify-center items-center space-x-md px-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md whitespace-nowrap" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md whitespace-nowrap" href="#">Hostels</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md whitespace-nowrap" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md whitespace-nowrap" href="#">Contact</a>
+<!-- <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md whitespace-nowrap" href="#">Attendance Tracking</a> -->
+<!-- <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md whitespace-nowrap" href="#">Fee Payment Portal</a> -->
+</div>
+<div class="flex items-center shrink-0">
+<img alt="BSF Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRU5yI9Xlf1Bm3hZ9X6uXR1j16LdJnvYo--J9O3l-HkSt67SdBpCRzGImNs5eYuSsFuW0xD3oMyTvkr06EaBGAjQgakydMK5FLOcdfyhtoJ_l6OTdyOYmq7rQIqMU-ckY5s5yvYdQTWf5UZodk-r_fiQAD47CL-h_oV57TM-A-qUolVlUw38ZVGUiUVKoN4QU6hovw1Ue9SqgDxo5XTa9rNB0VZ7uX29ETLjI2AdTluF7W1XdOukAW_SVBSCJaUPyow4bYXd1vx-iS"/>
+<button class="lg:hidden ml-md text-primary">
 <span class="material-symbols-outlined">menu</span>
 </button>
+</div>
 </nav>
 </header>
 <main>
 <!-- Hero Section -->
-<section class="relative h-[60vh] min-h-[450px] w-full flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLs9RdnmAMSeM7QyMwbq8sPU3gYaEdzpXw_IU4xp3AMEGfleDJeD6Bv_kHQByjGvWXWmOHKGJsaH5iR03NbI7-MbWh6O2zECZJiKRDF5v9OEkNk6gLrbgI2AcBE8QW28kNTTSobHT3-OYILl-_gWvgYSPenRrNdCRWPCRVkE4WGscLm2hImDnUYGQSB1RBjuc1TefmdVUaE5gIQtye_GhNQN7IaLd-Q6zzjkql0Sc-QwTgtvt7gyS9ZkEt0');"></div>
-<div class="absolute inset-0 bg-white/80 hero-blur"></div>
-</div>
-<div class="relative z-10 max-w-4xl px-margin-desktop text-center">
-<h1 class="font-display text-display md:text-[56px] text-primary mb-sm leading-tight">
-                    Rustamji Institute of Technology
-                </h1>
-<p class="font-display text-headline-lg text-secondary uppercase tracking-[0.2em] mb-lg">
-                    Hostel Management System
-                </p>
-<div class="h-1 w-24 bg-secondary mx-auto rounded-full"></div>
-</div>
-</section>
+<section class="relative min-h-[400px] w-full flex items-center overflow-hidden min-h-[700px]"><div class="absolute inset-0 z-0"><div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2ZgjX5C-IQxoldu8WH9Mv5SxeP8eF2DfjLmmyeLFVKJ5hYk15mi4p6DWOF3f7F8BwaZVdTZeQn7h9RXoZYwMdR3fi8KJHqaCSXhjh_YaC03kWxGmKgPhXRPg5pYB9jyiHFYYqKBn_2vKo2AEaFG3NustEwIiMUOiJMQvA175v_rzZADVuNRxGCoBwCRHk-Vortv7icGyJk_8vhB9FkfesgzFAiW1QLWiaFY0rBLAD9buiEfq5xc2CN7CXnsKB8DUqie3frTEEIF0i');"></div><div class="absolute inset-0 bg-primary/40"></div></div><div class="relative z-10 max-w-7xl w-full mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-xl items-center h-full py-xl"><div class="bg-white rounded-xl p-lg floating-shadow max-w-md mx-auto lg:mx-0 w-full"><div class="flex items-center gap-sm mb-md text-primary"><span class="material-symbols-outlined">shield</span><span class="font-display font-bold uppercase tracking-wider text-label-md">Secure Portal</span></div><h2 class="font-display text-headline-lg text-on-surface mb-xs">Welcome Back</h2><p class="font-body-md text-on-surface-variant mb-lg">Sign in to access your dashboard</p><div class="mb-lg"><p class="font-label-sm text-primary uppercase tracking-widest mb-sm">Select Your Role</p><div class="flex gap-sm"><button class="flex-1 flex flex-col items-center gap-xs p-sm rounded-lg border-2 border-primary bg-primary text-white"><span class="material-symbols-outlined">school</span><span class="font-label-sm">Student</span></button><button class="flex-1 flex flex-col items-center gap-xs p-sm rounded-lg border border-outline-variant/30 hover:border-primary transition-colors text-on-surface-variant"><span class="material-symbols-outlined">home</span><span class="font-label-sm">Warden</span></button><button class="flex-1 flex flex-col items-center gap-xs p-sm rounded-lg border border-outline-variant/30 hover:border-primary transition-colors text-on-surface-variant"><span class="material-symbols-outlined">person_settings</span><span class="font-label-sm">Admin</span></button></div></div><div class="space-y-md"><div class="space-y-xs"><label class="font-label-md text-on-surface">Username / Student ID</label><div class="relative"><span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant">person</span><input class="w-full pl-12 pr-md py-sm rounded-lg border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="e.g. RIT2026001" type="text"/></div></div><div class="space-y-xs"><label class="font-label-md text-on-surface">Password</label><div class="relative"><input class="w-full px-md py-sm rounded-lg border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="password" value="********"/><span class="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 text-on-surface-variant cursor-pointer">visibility_off</span></div></div><div class="flex items-center justify-between"><label class="flex items-center gap-xs font-label-md text-on-surface-variant cursor-pointer"><input class="rounded border-outline-variant/30 text-primary focus:ring-primary" type="checkbox"/> Remember me</label><a class="text-secondary font-label-md hover:underline" href="#">Forgot password?</a></div><button class="w-full bg-primary text-white py-md rounded-lg font-display font-bold flex items-center justify-center gap-sm hover:bg-primary/90 transition-colors shadow-lg"><span class="material-symbols-outlined">login</span> Sign In</button></div><p class="mt-lg text-center font-label-sm text-on-surface-variant">Secured by RIT - All rights reserved © 2026</p></div><div class="hidden lg:flex flex-col text-left text-white"><h1 class="font-display text-display mb-sm leading-tight">Rustamji Institute of Technology</h1><p class="font-display text-headline-lg text-secondary uppercase tracking-[0.2em] mb-lg">Hostel Management System</p><div class="h-1.5 w-32 bg-secondary rounded-full"></div></div></div></section>
 <!-- Stats Section -->
-<section class="relative -mt-20 z-20 px-margin-desktop max-w-4xl mx-auto">
-<div class="bg-white rounded-xl premium-shadow border border-outline-variant/30 p-lg flex justify-around items-center">
+<section class="relative z-20 px-margin-desktop max-w-4xl mx-auto -mt-16">
+<div class="bg-white rounded-xl floating-shadow border border-outline-variant/30 p-lg flex justify-around items-center">
 <div class="flex flex-col items-center text-center px-lg">
 <div class="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary mb-sm">
 <span class="material-symbols-outlined">apartment</span>
 </div>
-<div class="font-display text-headline-lg text-primary">3</div>
-<div class="font-label-md text-on-surface-variant">Total Hostels</div>
+<div class="font-display text-display text-primary">3</div>
+<div class="font-label-md text-on-surface-variant uppercase tracking-wider">Total Hostels</div>
 </div>
 <div class="w-px h-16 bg-outline-variant/30"></div>
 <div class="flex flex-col items-center text-center px-lg">
 <div class="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary mb-sm">
 <span class="material-symbols-outlined">groups</span>
 </div>
-<div class="font-display text-headline-lg text-primary">376</div>
-<div class="font-label-md text-on-surface-variant">Total Students</div>
+<div class="font-display text-display text-primary">376</div>
+<div class="font-label-md text-on-surface-variant uppercase tracking-wider">Total Students</div>
 </div>
 </div>
 </section>
 <!-- Hostel Overview Section -->
 <section class="py-xl px-margin-desktop max-w-7xl mx-auto">
-<div class="mb-lg">
+<div class="mb-lg text-center">
 <h2 class="font-display text-headline-lg text-primary mb-xs">Hostel Blocks</h2>
-<div class="h-1 w-12 bg-secondary rounded-full"></div>
+<div class="h-1 w-12 bg-secondary rounded-full mx-auto"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
 <!-- Card 1 -->
-<div class="bg-white border border-outline-variant/30 rounded-xl p-lg premium-shadow hover:floating-shadow transition-all duration-300">
-<div class="w-12 h-12 bg-primary/5 text-primary rounded-lg flex items-center justify-center mb-md">
-<span class="material-symbols-outlined">home</span>
+<div class="bg-white border border-outline-variant/30 rounded-xl overflow-hidden premium-shadow hover:floating-shadow transition-all duration-300 flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="APJ Abdul Kalam Hostel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQkb82gWdtRxHiKTRaYF-jOl59l5An5FYzPKr6UueCSaA680Jps89LHoTxG9phkvHKZlkDT7I7-ceBgE4UYtRajTvFQ2swt5i8b682wh0gRGV_tRkPEglruzfxeHqT13Ef0KMn1g1jhAqU1hmlVTMh67yHoySrkaS8z_gUrPrl91ERyxsb2BwNIreTw45x0qfjh7kF8u7H24Tt5hYIy6iH6x40UacO3V15MyiGuR19J-WBUSp2pOT-bkvUaqQZR72fKPAs0eQz9BPK"/>
 </div>
+<div class="p-md flex-1">
 <h3 class="font-display text-headline-md text-primary mb-xs">APJ Abdul Kalam Hostel</h3>
 <p class="text-on-surface-variant font-label-md">Boys Hostel - Block A</p>
 </div>
-<!-- Card 2 -->
-<div class="bg-white border border-outline-variant/30 rounded-xl p-lg premium-shadow hover:floating-shadow transition-all duration-300">
-<div class="w-12 h-12 bg-primary/5 text-primary rounded-lg flex items-center justify-center mb-md">
-<span class="material-symbols-outlined">home</span>
 </div>
+<!-- Card 2 -->
+<div class="bg-white border border-outline-variant/30 rounded-xl overflow-hidden premium-shadow hover:floating-shadow transition-all duration-300 flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="CV Raman Hostel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfm--QDOk4Ut4eUbXY9mPMC4nAcGohSBdN1IDqxUcvZqj56q0rjMRhTI88Bp0gEi3X0yj1-PDygTREEoyr6lMvV0VXOIkuynOx_e4tSYclpjfFccJ7AMuxgGbZsmqDgamPPsy-uNvmD5E8dKH0-GCkjqW2BaKy66d8MDg-Fl3jJu711DpfFlv70k6PDbpScEM3dLbkGfZkDvOWG7G5sc8mRTlXztBUW5FxsHD6EJ3scC_M7SaOTb88Kpx2OsmQLevrsrbvULqveB3k"/>
+</div>
+<div class="p-md flex-1">
 <h3 class="font-display text-headline-md text-primary mb-xs">CV Raman Hostel</h3>
 <p class="text-on-surface-variant font-label-md">Boys Hostel - Block B</p>
 </div>
-<!-- Card 3 -->
-<div class="bg-white border border-outline-variant/30 rounded-xl p-lg premium-shadow hover:floating-shadow transition-all duration-300">
-<div class="w-12 h-12 bg-secondary/10 text-secondary rounded-lg flex items-center justify-center mb-md">
-<span class="material-symbols-outlined">home</span>
 </div>
+<!-- Card 3 -->
+<div class="bg-white border border-outline-variant/30 rounded-xl overflow-hidden premium-shadow hover:floating-shadow transition-all duration-300 flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="Kalpana Chawla Hostel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaLHkeqnZ-Sbx1CREryPJ-qVBi9xGhvFNPIDvxeQWD4dNy92Uq3_0-joxky5qy4CtYINZM1bRh-odPw3ByqH2JbNTe-KTYQdWgmgTLiKoF0vcIuqYSC0gJhgOOMwGv2LESYpoDJ5-BiWK80Q7dtqlCf9exNAtrBo59CJb1leNOPNQW9zPVtVBqJRV_924p5fHjlqbWgNVDZmvNrioL92_2CAqhEfuhz_U5wZj4R45k1OQ8v1VVU1Wm3iNMmIUnMgoGb1w_yMFUTFvi"/>
+</div>
+<div class="p-md flex-1">
 <h3 class="font-display text-headline-md text-primary mb-xs">Kalpana Chawla Hostel</h3>
 <p class="text-on-surface-variant font-label-md">Girls Hostel - Block C</p>
 </div>
+</div>
+</div>
+</section>
+<!-- Campus Overview Section (New) -->
+<section class="py-xl px-margin-desktop max-w-7xl mx-auto">
+<div class="mb-lg">
+<h2 class="font-display text-headline-lg text-primary mb-xs">Campus Overview</h2>
+<div class="h-1 w-12 bg-secondary rounded-full"></div>
+</div>
+<div class="rounded-xl overflow-hidden premium-shadow border border-outline-variant/30">
+<img alt="RJIT Campus" class="w-full aspect-[21/9] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2ZgjX5C-IQxoldu8WH9Mv5SxeP8eF2DfjLmmyeLFVKJ5hYk15mi4p6DWOF3f7F8BwaZVdTZeQn7h9RXoZYwMdR3fi8KJHqaCSXhjh_YaC03kWxGmKgPhXRPg5pYB9jyiHFYYqKBn_2vKo2AEaFG3NustEwIiMUOiJMQvA175v_rzZADVuNRxGCoBwCRHk-Vortv7icGyJk_8vhB9FkfesgzFAiW1QLWiaFY0rBLAD9buiEfq5xc2CN7CXnsKB8DUqie3frTEEIF0i"/>
 </div>
 </section>
 <!-- Administrative Portals -->
@@ -208,7 +215,7 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
 <!-- Action 1 -->
 <a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined">report_problem</span>
 </div>
 <div>
@@ -218,7 +225,7 @@
 </a>
 <!-- Action 2 -->
 <a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined">restaurant</span>
 </div>
 <div>
@@ -228,7 +235,7 @@
 </a>
 <!-- Action 3 -->
 <a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined">description</span>
 </div>
 <div>
@@ -238,7 +245,7 @@
 </a>
 <!-- Action 4 -->
 <a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined">grid_view</span>
 </div>
 <div>
@@ -248,7 +255,7 @@
 </a>
 <!-- Action 5 -->
 <a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined">fact_check</span>
 </div>
 <div>
@@ -258,7 +265,7 @@
 </a>
 <!-- Action 6 -->
 <a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined">payments</span>
 </div>
 <div>
@@ -269,7 +276,7 @@
 </div>
 </div>
 </section>
-<!-- Application CTA (Simplified) -->
+<!-- Application CTA -->
 <section class="py-xl bg-primary text-on-primary">
 <div class="px-margin-desktop max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-lg">
 <div class="text-center md:text-left">
@@ -286,7 +293,10 @@
 <footer class="bg-white w-full border-t border-outline-variant/20">
 <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-lg max-w-7xl mx-auto gap-md">
 <div class="flex flex-col items-center md:items-start gap-sm">
+<div class="flex items-center gap-xs">
+<img alt="RJIT Logo" class="h-8 w-auto opacity-80 grayscale hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByKJAtyqSmNwYeSGFxUvT3kEOG7n3mEDQ7zJtY3tbM6Iq0nkV9iHmlWLXkFpEcSArM0MN2Jgjrs41yFVf7nxlPEEB2OrmejBjLbPKPUEmkmClJXEAO6FGF6WoyOVB-9Pty_pkk5qbu-NBeqoLfY77f-vednPuHJbaqP97VFCIOgcKGXtDKUJc1cKcBoYZmUrD8nbfs0a92HICAJeBGM-CdkNUHQn4upDEduo-gR6wBTo3Zc6ihaZZE18pNYB6-wqp42WZPivVqkx3t"/>
 <div class="font-display text-headline-md font-bold text-primary">RJIT HMS</div>
+</div>
 <p class="font-body-md text-on-surface-variant max-w-xs text-center md:text-left">Unified Management Portal for Rustamji Institute of Technology Hostels.</p>
 </div>
 <div class="flex flex-wrap justify-center gap-md">
@@ -295,8 +305,8 @@
 <a class="text-on-surface-variant hover:underline font-label-sm" href="#">Contact Us</a>
 </div>
 <div class="font-label-sm text-on-surface-variant text-center md:text-right">
-                © 2026 Rustamji Institute of Technology. All rights reserved.
-            </div>
+            © 2026 Rustamji Institute of Technology. All rights reserved.
+        </div>
 </div>
 </footer>
 </body></html>
