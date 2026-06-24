@@ -134,8 +134,104 @@
 </nav>
 </header>
 <main>
-<!-- Hero Section -->
-<section class="relative min-h-[400px] w-full flex items-center overflow-hidden min-h-[700px]"><div class="absolute inset-0 z-0"><div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2ZgjX5C-IQxoldu8WH9Mv5SxeP8eF2DfjLmmyeLFVKJ5hYk15mi4p6DWOF3f7F8BwaZVdTZeQn7h9RXoZYwMdR3fi8KJHqaCSXhjh_YaC03kWxGmKgPhXRPg5pYB9jyiHFYYqKBn_2vKo2AEaFG3NustEwIiMUOiJMQvA175v_rzZADVuNRxGCoBwCRHk-Vortv7icGyJk_8vhB9FkfesgzFAiW1QLWiaFY0rBLAD9buiEfq5xc2CN7CXnsKB8DUqie3frTEEIF0i');"></div><div class="absolute inset-0 bg-primary/40"></div></div><div class="relative z-10 max-w-7xl w-full mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-xl items-center h-full py-xl"><div class="bg-white rounded-xl p-lg floating-shadow max-w-md mx-auto lg:mx-0 w-full"><div class="flex items-center gap-sm mb-md text-primary"><span class="material-symbols-outlined">shield</span><span class="font-display font-bold uppercase tracking-wider text-label-md">Secure Portal</span></div><h2 class="font-display text-headline-lg text-on-surface mb-xs">Welcome Back</h2><p class="font-body-md text-on-surface-variant mb-lg">Sign in to access your dashboard</p><div class="mb-lg"><p class="font-label-sm text-primary uppercase tracking-widest mb-sm">Select Your Role</p><div class="flex gap-sm"><button class="flex-1 flex flex-col items-center gap-xs p-sm rounded-lg border-2 border-primary bg-primary text-white"><span class="material-symbols-outlined">school</span><span class="font-label-sm">Student</span></button><button class="flex-1 flex flex-col items-center gap-xs p-sm rounded-lg border border-outline-variant/30 hover:border-primary transition-colors text-on-surface-variant"><span class="material-symbols-outlined">home</span><span class="font-label-sm">Warden</span></button><button class="flex-1 flex flex-col items-center gap-xs p-sm rounded-lg border border-outline-variant/30 hover:border-primary transition-colors text-on-surface-variant"><span class="material-symbols-outlined">person_settings</span><span class="font-label-sm">Admin</span></button></div></div><div class="space-y-md"><div class="space-y-xs"><label class="font-label-md text-on-surface">Username / Student ID</label><div class="relative"><span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant">person</span><input class="w-full pl-12 pr-md py-sm rounded-lg border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="e.g. RIT2026001" type="text"/></div></div><div class="space-y-xs"><label class="font-label-md text-on-surface">Password</label><div class="relative"><input class="w-full px-md py-sm rounded-lg border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="password" value="********"/><span class="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 text-on-surface-variant cursor-pointer">visibility_off</span></div></div><div class="flex items-center justify-between"><label class="flex items-center gap-xs font-label-md text-on-surface-variant cursor-pointer"><input class="rounded border-outline-variant/30 text-primary focus:ring-primary" type="checkbox"/> Remember me</label><a class="text-secondary font-label-md hover:underline" href="#">Forgot password?</a></div><button class="w-full bg-primary text-white py-md rounded-lg font-display font-bold flex items-center justify-center gap-sm hover:bg-primary/90 transition-colors shadow-lg"><span class="material-symbols-outlined">login</span> Sign In</button></div><p class="mt-lg text-center font-label-sm text-on-surface-variant">Secured by RIT - All rights reserved © 2026</p></div><div class="hidden lg:flex flex-col text-left text-white"><h1 class="font-display text-display mb-sm leading-tight">Rustamji Institute of Technology</h1><p class="font-display text-headline-lg text-secondary uppercase tracking-[0.2em] mb-lg">Hostel Management System</p><div class="h-1.5 w-32 bg-secondary rounded-full"></div></div></div></section>
+<section class="relative min-h-screen w-full flex items-center overflow-hidden">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2ZgjX5C-IQxoldu8WH9Mv5SxeP8eF2DfjLmmyeLFVKJ5hYk15mi4p6DWOF3f7F8BwaZVdTZeQn7h9RXoZYwMdR3fi8KJHqaCSXhjh_YaC03kWxGmKgPhXRPg5pYB9jyiHFYYqKBn_2vKo2AEaFG3NustEwIiMUOiJMQvA175v_rzZADVuNRxGCoBwCRHk-Vortv7icGyJk_8vhB9FkfesgzFAiW1QLWiaFY0rBLAD9buiEfq5xc2CN7CXnsKB8DUqie3frTEEIF0i');"></div>
+            <div class="absolute inset-0 bg-blue-900/30"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative z-10 max-w-7xl w-full mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-12">
+            
+            <!-- Left: Institution Info (appears first on desktop, second on mobile) -->
+            <div class="flex flex-col text-left text-white lg:order-1 order-2">
+                <div class="mb-8">
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-4">Rustamji Institute of Technology</h1>
+                    <p class="text-3xl md:text-4xl font-bold text-yellow-400 uppercase tracking-widest mb-6">Hostel Management System</p>
+                    <div class="h-2 w-40 bg-yellow-400 rounded-full"></div>
+                </div>
+                <div class="mt-12">
+                    <p class="text-lg text-blue-100 leading-relaxed max-w-md">
+                        Streamlined hostel operations for students, wardens, and administrators. Manage accommodations, facilities, and communications efficiently.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right: Login Form (appears second on desktop, first on mobile) -->
+            <div class="lg:order-2 order-1">
+                <div class="bg-white rounded-2xl p-8 floating-shadow max-w-md mx-auto lg:mx-0 w-full">
+                    <!-- Header -->
+                    <div class="flex items-center gap-2 mb-6 text-blue-600">
+                        <span class="material-symbols-outlined text-2xl">shield</span>
+                        <span class="font-bold uppercase tracking-wider text-sm">Secure Portal</span>
+                    </div>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h2>
+                    <p class="text-gray-600 mb-8">Sign in to access your dashboard</p>
+
+                    <!-- Role Selection -->
+                    <div class="mb-8">
+                        <p class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-4">Select Your Role</p>
+                        <div class="flex gap-3">
+                            <button class="flex-1 flex flex-col items-center gap-2 p-3 rounded-lg border-2 border-blue-600 bg-blue-600 text-white hover:bg-blue-700 transition-colors">
+                                <span class="material-symbols-outlined">school</span>
+                                <span class="text-xs font-semibold">Student</span>
+                            </button>
+                            <button class="flex-1 flex flex-col items-center gap-2 p-3 rounded-lg border border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">
+                                <span class="material-symbols-outlined">home</span>
+                                <span class="text-xs font-semibold">Warden</span>
+                            </button>
+                            <button class="flex-1 flex flex-col items-center gap-2 p-3 rounded-lg border border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">
+                                <span class="material-symbols-outlined">admin_panel_settings</span>
+                                <span class="text-xs font-semibold">Admin</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Form Fields -->
+                    <div class="space-y-5">
+                        <!-- Username -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Username / Student ID</label>
+                            <div class="relative">
+                                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">person</span>
+                                <input class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-all" placeholder="e.g. RIT2024001" type="text"/>
+                            </div>
+                        </div>
+
+                        <!-- Password -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Password</label>
+                            <div class="relative">
+                                <input class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none transition-all" type="password" value="••••••••"/>
+                                <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer hover:text-gray-600">visibility_off</span>
+                            </div>
+                        </div>
+
+                        <!-- Remember & Forgot -->
+                        <div class="flex items-center justify-between">
+                            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer">
+                                <input class="rounded border-gray-300 text-blue-600 focus:ring-blue-500" type="checkbox"/> 
+                                <span>Remember me</span>
+                            </label>
+                            <a class="text-sm text-orange-500 font-semibold hover:underline" href="#">Forgot password?</a>
+                        </div>
+
+                        <!-- Sign In Button -->
+                        <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors shadow-lg">
+                            <span class="material-symbols-outlined">login</span> 
+                            Sign In
+                        </button>
+                    </div>
+
+                    <!-- Footer -->
+                    <p class="mt-6 text-center text-xs text-gray-500">Secured by RIT - All rights reserved © 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <!-- Hostel Overview Section -->
 <section class="py-xl px-margin-desktop max-w-7xl mx-auto">
 <div class="mb-lg text-center">
@@ -172,99 +268,6 @@
 <h3 class="font-display text-headline-md text-primary mb-xs">Kalpana Chawla Hostel</h3>
 <p class="text-on-surface-variant font-label-md">Girls Hostel - Block C</p>
 </div>
-</div>
-</div>
-</section>
-<!-- Campus Overview Section (New) -->
-<section class="py-xl px-margin-desktop max-w-7xl mx-auto">
-<div class="mb-lg">
-<h2 class="font-display text-headline-lg text-primary mb-xs">Campus Overview</h2>
-<div class="h-1 w-12 bg-secondary rounded-full"></div>
-</div>
-<div class="rounded-xl overflow-hidden premium-shadow border border-outline-variant/30">
-<img alt="RJIT Campus" class="w-full aspect-[21/9] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2ZgjX5C-IQxoldu8WH9Mv5SxeP8eF2DfjLmmyeLFVKJ5hYk15mi4p6DWOF3f7F8BwaZVdTZeQn7h9RXoZYwMdR3fi8KJHqaCSXhjh_YaC03kWxGmKgPhXRPg5pYB9jyiHFYYqKBn_2vKo2AEaFG3NustEwIiMUOiJMQvA175v_rzZADVuNRxGCoBwCRHk-Vortv7icGyJk_8vhB9FkfesgzFAiW1QLWiaFY0rBLAD9buiEfq5xc2CN7CXnsKB8DUqie3frTEEIF0i"/>
-</div>
-</section>
-<!-- Administrative Portals -->
-<section class="py-xl bg-surface-container-low border-y border-outline-variant/20">
-<div class="px-margin-desktop max-w-7xl mx-auto">
-<div class="mb-xl text-center">
-<h2 class="font-display text-headline-lg text-primary mb-xs">Administrative Portals</h2>
-<p class="font-body-md text-on-surface-variant">Streamlined management tools for residents and staff.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Action 1 -->
-<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">report_problem</span>
-</div>
-<div>
-<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Complaint Box</h4>
-<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Register Issues</p>
-</div>
-</a>
-<!-- Action 2 -->
-<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">restaurant</span>
-</div>
-<div>
-<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Mess Menu</h4>
-<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Weekly Schedule</p>
-</div>
-</a>
-<!-- Action 3 -->
-<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">description</span>
-</div>
-<div>
-<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Leave Application</h4>
-<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Online Portal</p>
-</div>
-</a>
-<!-- Action 4 -->
-<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">grid_view</span>
-</div>
-<div>
-<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Room Allocation</h4>
-<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Manage Status</p>
-</div>
-</a>
-<!-- Action 5 -->
-<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">fact_check</span>
-</div>
-<div>
-<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Attendance Tracking</h4>
-<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Daily Records</p>
-</div>
-</a>
-<!-- Action 6 -->
-<a class="group bg-white p-lg rounded-xl premium-shadow border border-outline-variant/20 hover:border-primary transition-all duration-200 flex items-center space-x-md" href="#">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">payments</span>
-</div>
-<div>
-<h4 class="font-display text-headline-md text-primary group-hover:text-primary/80">Fee Payment</h4>
-<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Digital Transactions</p>
-</div>
-</a>
-</div>
-</div>
-</section>
-<!-- Application CTA -->
-<section class="py-xl bg-primary text-on-primary">
-<div class="px-margin-desktop max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-lg">
-<div class="text-center md:text-left">
-<h2 class="font-display text-headline-lg text-white mb-sm">Hostel Admission &amp; Queries</h2>
-<p class="font-body-md text-white/80">Contact the Registrar's office for admission processes and administrative support.</p>
-</div>
-<div class="flex flex-col sm:flex-row gap-md">
-<button class="bg-secondary text-white px-xl py-md rounded-lg font-label-md hover:bg-secondary/90 transition-colors shadow-lg">Contact Registrar</button>
 </div>
 </div>
 </section>
